@@ -1,0 +1,45 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+:root{
+    font-size: 62.5%;
+}
+
+body {
+    background: oklch(28.2% 0.091 267.935);
+    font-size: 1.6rem;
+}
+
+#page {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+header{
+    padding-block: 1.5rem; 
+}
+
+fieldset{
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.informacoes-pessoais div{
+   margin-bottom: 2rem;
+}
+.informacoes-pessoais input{
+    display: block;
+    margin-top: 0.7rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.informacoes-pessoais input:focus{
+    outline: 2px solid greenyellow;
+}

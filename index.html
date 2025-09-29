@@ -1,25 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Formulários</h1>
-    </header>
 
-    <main>
-        <form action="">
-            <fieldset>
-                <Legend>Informações Pessoais</Legend>
-
-                <div>
-                    <label for=""></label>
-                </div>
-            </fieldset>
-        </form>
-    </main>
-</body>
+<div id="page">
+    <body>
+        <header>
+            <h1>Formulários</h1>
+        </header>
+    
+        <main>
+            <form action="">
+                <fieldset class="informacoes-pessoais">
+                    <Legend>Informações Pessoais</Legend>
+    
+                    <div>
+                        <label for="none">Nome Completo:</label>
+                        <input type="text" placeholder="Digite seu nome..." id="none" required>
+                    </div>
+    
+                    <div>
+                        <label for="cpf">CPF:</label>
+                        <input type="number" placeholder="Digite seu CPF..." id="cpf" required>
+                    </div>
+    
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" placeholder="Digite seu E-mail..." id="email" required>
+                    </div>
+    
+                    <div>
+                        <label for="senha">Senha:</label>
+                        <input type="password" placeholder="Digite uma senha..." id="senha" required maxlength="10"
+                            minlength="0">
+                    </div>
+    
+                    <div>
+                        <label for="foto">Foto de perfil:</label>
+                        <input type="file" id="foto" accept=".jpg,.jpeg,.png,.svg" required>
+                    </div>
+    
+                    <div>
+                        <label for="nascimento">Data de nascimento:</label>
+                        <input type="date" id="nascimento" max="2014-12-31" required>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Gostos pessoais/Tamanho da camiseta</legend>
+    
+                    <div>
+                        <label for="cor">Cor preferida:</label>
+                        <input type="color" id="cor">
+                    </div>
+    
+                    <div>
+                        <h2>Estilos musicais preferidos:</h2>
+    
+                        <div>
+                            <input type="checkbox" id="pop">
+                            <label for="pop">Pop</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="gospel">
+                            <label for="gospel">Gospel</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="funk">
+                            <label for="funk">Funk</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sertanejo">
+                            <label for="sertanejo">Sertanejo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="trap">
+                            <label for="trap">Trap</label>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <h2>Qual é a sua preferência?</h2>
+    
+                        <div>
+                            <input type="radio" id="doce" name="preferencia">
+                            <label for="doce">Doce</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="salgado" name="preferencia">
+                            <label for="salgado">Salgado</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="ambos" name="preferencia">
+                            <label for="ambos">Ambos</label>
+                        </div>
+                    </div>
+    
+                    <br>
+    
+                    <div>
+                        <label for="tamanho">Tamanho da sua camiseta:</label>
+                        <select name="tamanho" id="tamanho">
+                            <option disabled selected> Selecione...</option>
+                            <option value="pp">PP</option>
+                            <option value="p">P</option>
+                            <option value="m">M</option>
+                            <option value="g">G</option>
+                            <option value="gg">GG</option>
+                            <option value="exg">EXG</option>
+                        </select>
+                    </div>
+    
+                    <div>
+                        <label for="">Faça um resumo sobre você</label>
+                        <br>
+                        <textarea name="resumo" id="resumo" cols="30" rows="10" spellcheck="true" placeholder="Digite seu resumo..."></textarea>
+                    </div>
+                </fieldset>
+    
+                <button>Enviar</button>
+            </form>
+        </main>
+    </body>
+</div>
 </html>
