@@ -3,7 +3,6 @@
     margin: 0%;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    color: white;
 }
 :root{
     font-size: 62.5%;
@@ -12,6 +11,7 @@
 body {
     background: oklch(28.2% 0.091 267.935);
     font-size: 1.6rem;
+    color: white;
 }
 
 #page {
@@ -29,10 +29,13 @@ fieldset{
     border-radius: 1rem;
 }
 
-.informacoes-pessoais div{
+.informacoes-pessoais {
+    
+div{
    margin-bottom: 2rem;
-}
-.informacoes-pessoais input{
+ }
+ 
+ input{
     display: block;
     margin-top: 0.7rem;
     padding: 1rem 1.5rem;
@@ -40,6 +43,21 @@ fieldset{
     border: none;
 }
 
-.informacoes-pessoais input:focus{
+input:focus{
     outline: 2px solid greenyellow;
 }
+
+input::placeholder{
+    color: oklch(70.7% 0.022 261.325);
+}
+
+input[type=file]{
+    color: white;
+}
+}
+
+.gostos-pessoais{
+
+}
+
+\\gostos-pessoais ou .gostos-pessoais > div
