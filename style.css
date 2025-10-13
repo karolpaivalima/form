@@ -1,10 +1,11 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
-:root{
+
+:root {
     font-size: 62.5%;
 }
 
@@ -19,45 +20,90 @@ body {
     margin-inline: auto;
 }
 
-header{
-    padding-block: 1.5rem; 
+header {
+    padding-block: 1.5rem;
 }
 
-fieldset{
+fieldset {
     margin-bottom: 2rem;
     padding: 2rem;
     border-radius: 1rem;
 }
 
 .informacoes-pessoais {
-    
-div{
-   margin-bottom: 2rem;
- }
- 
- input{
-    display: block;
-    margin-top: 0.7rem;
-    padding: 1rem 1.5rem;
+
+    div {
+        margin-bottom: 2rem;
+    }
+
+    input {
+        display: block;
+        margin-top: 0.7rem;
+        padding: 1rem 1.5rem;
+        border-radius: 1rem;
+        border: none;
+    }
+
+    input:focus {
+        outline: 2px solid greenyellow;
+    }
+
+    input::placeholder {
+        color: oklch(70.7% 0.022 261.325);
+    }
+
+    input[type=file] {
+        color: white;
+    }
+}
+
+.gostos-pessoais {
+    &>div {
+        margin-bottom: 1.5rem;
+    }
+
+    select {
+        padding: 1rem;
+        border-radius: 1rem;
+        border: none;
+        outline: none;
+    }
+
+    &>div:nth-of-type(5) {
+        display: flex;
+        flex-direction: column;
+        gap: rem;
+
+        textarea {
+            max-width: 38rem;
+        }
+    }
+}
+
+button {
+    padding: 1rem;
+    width: 10rem;
+    background: oklch(59.6% 0.145 163.225);
     border-radius: 1rem;
     border: none;
-}
-
-input:focus{
-    outline: 2px solid greenyellow;
-}
-
-input::placeholder{
-    color: oklch(70.7% 0.022 261.325);
-}
-
-input[type=file]{
     color: white;
-}
-}
-
-.gostos-pessoais{
-
+    margin-bottom: 2rem;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-\\gostos-pessoais ou .gostos-pessoais > div
+button:hover{
+    background: oklch(69.6% 0.17 162.48);
+    transition: background .4s;
+}
+
+@media(max-width: 760px){
+    body{
+        padding-inline: 1rem;
+    }
+}
+
+/* \\gostos-pessoais ou gostos-pessoais>div,
+margin-bottom poe espaço embaixo,
+sempre se poe max widht,
+haver é de passar o mouse em cima */
