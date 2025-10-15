@@ -10,7 +10,7 @@
 }
 
 body {
-    background: oklch(28.2% 0.091 267.935);
+    background: oklch(29.3% 0.136 325.661);
     font-size: 1.6rem;
     color: white;
 }
@@ -45,7 +45,7 @@ fieldset {
     }
 
     input:focus {
-        outline: 2px solid greenyellow;
+        outline: 2px solid oklch(58.6% 0.253 17.585);
     }
 
     input::placeholder {
@@ -83,7 +83,7 @@ fieldset {
 button {
     padding: 1rem;
     width: 10rem;
-    background: oklch(59.6% 0.145 163.225);
+    background: oklch(66.7% 0.295 322.15);
     border-radius: 1rem;
     border: none;
     color: white;
@@ -92,13 +92,13 @@ button {
     font-weight: bold;
 }
 
-button:hover{
-    background: oklch(69.6% 0.17 162.48);
+button:hover {
+    background: oklch(58.6% 0.253 17.585);
     transition: background .4s;
 }
 
-@media(max-width: 760px){
-    body{
+@media(max-width: 760px) {
+    body {
         padding-inline: 1rem;
     }
 }
